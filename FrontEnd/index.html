@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 3, from LayoutIt!</title>
+    <title>YouAreHereLocator</title>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+    <meta name="description" content="You are here locator using tensor flow visual recognition">
+    <meta name="author" content="Nicholas Fay">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -19,33 +19,27 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<form role="form" class="form-inline">
+			<form id= "adminForm" role="form" class="form-inline" action="./scripts/adminpost.php" method="POST">
 				<div class="form-group">
 					<label for="training">
 						Input zip of images
 					</label>
 					<input type="file" id="training" accept=".zip">
-					<!-- <p class="help-block">
-						Example block-level help text here.
-					</p>-->
 				</div>
 				<img id="RPI" alt="RPI Map" src="./images/rpimap.png"> 
-				<input id="submit" name="Train" type="submit" value="Train">
+				<input id="adminSub" name="Train" type="submit" value="Train">
 			</form>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<form role="form" class="form-inline">
+			<form role="form" class="form-inline" method="POST">
 				<div class="form-group">
 					<label for="training">
-						Input zip of images
+						Input one image for classification
 					</label>
-					<input type="file" id="training" accept=".zip">
-					<input id="submit" name="Train" type="submit" value="Classify">
-					<!-- <p class="help-block">
-						Example block-level help text here.
-					</p>-->
+					<input type="file" id="training" accept=".jpg, .jpeg, .png">
+					<input id="userSub" name="Train" type="submit" value="Classify">
 				</div>
 			</form>
 		</div>
