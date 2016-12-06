@@ -1,0 +1,1 @@
+From backend, tensorflow is a virtual env enviroment. To activate run $ source tensorflow/bin/activate
